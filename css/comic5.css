@@ -1,0 +1,297 @@
+
+.comic-title {
+    font-family: var(--main-font);
+    font-size: var(--font-size-comic-title);
+    color:var(--color-purple);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.comic-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(32, 139, 0);
+    font-family: var(--main-font);
+
+}
+
+.comic__item {
+    width: 50%;
+    height: 300px;
+    border: 3px solid var(--color-darkgreen);
+    position: relative;
+}
+
+.comic__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cloud-img {
+    width: 100%;
+}
+
+.comic__item1 .comic__img {
+    filter: grayscale(0%);
+}
+
+.comic__item3 .comic__img {
+    filter: brightness(200%) blur(1px);
+}
+
+.comic__item4 .comic__img {
+    filter: sepia(100%);
+}
+
+.comic__item1 .cloud1 {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.comic__item1 .cloud-img1 {
+    transform: scaleY(1.1) scaleX(1.3) rotate(190deg);
+}
+
+.comic__item1 .text1 {
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    font-size: 15px;
+    transform: rotate(8deg);
+}
+
+.comic__item1 .cloud1:hover{
+    transform: scaleY(1.1) scaleX(1.4) rotate(0deg); 
+}
+
+.comic__item2 .cloud2 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+    fill: none;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.comic__item2 .cloud-img2 {
+    position: absolute;
+    bottom: 120px;
+    right:140px;
+
+}
+
+.comic__item2 .cloud-img2{
+    transform: scaleY(1) scaleX(1.2) rotate(0deg);
+}
+
+.comic__item2 .text2 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 210px;
+    right:195px;
+    font-size: 15px;
+    transition:all 0.5s ease-in-out;
+}
+
+
+.comic__item2 .text2:hover{
+    color: rgb(244, 0, 0);
+}
+
+.comic__item3 .cloud3 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+
+}
+
+.comic__item3 .cloud-img3 {
+    position: absolute;
+    bottom: 30px;
+    right:150px;
+
+}
+
+.comic__item3 .cloud-img3{
+    transform: scaleY(1) scaleX(1.3) rotate(400deg);
+}
+
+.comic__item3 .text3 {
+    color: #ffffff;
+    position: absolute;
+    width: 200px;
+    bottom: 92px;
+    right:115px;
+    font-size: 15px;
+    transform: rotate(23deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.comic__item3 .text3:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+.comic__item4 .cloud4 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+
+}
+
+.comic__item4 .cloud-img4 {
+    position: absolute;
+    bottom: 150px;
+    right:150px;
+}
+
+
+.comic__item4 .cloud-img4{
+    transform: scaleY(1) scaleX(1.7) rotate(0deg);
+}
+
+.comic__item4 .text4 {
+    width: 200px;
+    position: absolute;
+    bottom: 227px;
+    right:120px;
+    font-size: 15px;
+}
+
+
+.comic__item5 .cloud5 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+
+}
+
+.comic__item5 .cloud-img5 {
+    position: absolute;
+    bottom: 120px;
+    right:150px;
+}
+
+.comic__item5 .cloud-img5{
+    transform: scaleY(1) scaleX(1.5) rotate(0deg);
+}
+
+.comic__item5 .text5 {
+    width: 150px;
+    position: absolute;
+    bottom: 200px;
+    right:160px;
+    font-size: 15px;
+
+}
+
+
+.comic__item6 .cloud6 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+
+}
+
+.comic__item6 .cloud-img6 {
+    position: absolute;
+    bottom: 120px;
+    right:100px;
+}
+
+.comic__item6 .cloud-img6{
+    transform: scaleY(1) scaleX(1.9) rotate(0deg);
+}
+
+.comic__item6 .text6 {
+    width: 150px;
+    position: absolute;
+    bottom: 210px;
+    right:90px;
+    font-size: 15px;
+}
+
+
+.comic__item7 .cloud7 {
+    position: absolute;
+    width: 200px;
+    right: 25px;
+    bottom: 10px;
+
+}
+
+.comic__item7 .cloud-img7 {
+    position: absolute;
+    bottom: 120px;
+    right:5px;
+}
+
+.comic__item7 .cloud-img7{
+    transform: scaleY(1) scaleX(1.5) rotate(10deg);
+}
+
+.comic__item7 .text7 {
+    width: 150px;
+    position: absolute;
+    bottom: 210px;
+    right:20px;
+    font-size: 15px;
+}
+
+
+
+
+.comic__item7 .comic__img {
+    filter: grayscale(100%);
+}
+
+.comic__item8 .comic__img {
+    animation: psihodel 0.2s infinite;
+}
+
+@keyframes psihodel {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media(max-width:900px) {
+    .comic__item {
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .comic__item5 .cloud1 {
+        width: 200px;
+        top: 100px;
+        left: 0;
+
+    }
+
+    .comic__item5 .cloud-img1 {
+        transform: scaleX(-1) scaleY(-1);
+    }
+
+    .comic__item5 .cloud2 {
+        position: absolute;
+        width: 200px;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    .comic__item5 .cloud-img2 {
+        transform: rotate(180deg);
+    }
+}
