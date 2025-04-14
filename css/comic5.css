@@ -56,16 +56,19 @@
 }
 
 .comic__item1 .text1 {
+    color: #cacaca;
     position: absolute;
     top: 90px;
     left: 55px;
     font-size: 15px;
     transform: rotate(8deg);
+    transition: all 0.5s ease-in-out;
 }
 
-.comic__item1 .cloud1:hover{
-    transform: scaleY(1.1) scaleX(1.4) rotate(0deg); 
+.comic__item1 .text1:hover{
+    color: #000000;
 }
+
 
 .comic__item2 .cloud2 {
     position: absolute;
@@ -89,17 +92,16 @@
 }
 
 .comic__item2 .text2 {
-    color: rgb(255, 255, 255);
+    color: #cacaca;
     position: absolute;
     bottom: 210px;
     right:195px;
     font-size: 15px;
-    transition:all 0.5s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 
-
 .comic__item2 .text2:hover{
-    color: rgb(244, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .comic__item3 .cloud3 {
@@ -122,14 +124,14 @@
 }
 
 .comic__item3 .text3 {
-    color: #ffffff;
+    color: #cacaca;
     position: absolute;
     width: 200px;
     bottom: 92px;
     right:115px;
     font-size: 15px;
     transform: rotate(23deg);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .comic__item3 .text3:hover{
@@ -157,11 +159,17 @@
 }
 
 .comic__item4 .text4 {
+    color: #cacaca;
     width: 200px;
     position: absolute;
     bottom: 227px;
     right:120px;
     font-size: 15px;
+    transition:all 0.4s ease-in-out;
+}
+
+.comic__item4 .text4:hover {
+    color: #000000;
 }
 
 
@@ -184,14 +192,18 @@
 }
 
 .comic__item5 .text5 {
+    color: #cacaca;
     width: 150px;
     position: absolute;
     bottom: 200px;
     right:160px;
     font-size: 15px;
-
+    transition: all 0.5s ease-in-out;
 }
 
+.comic__item5 .text5:hover{
+    color: #000000;
+}
 
 .comic__item6 .cloud6 {
     position: absolute;
@@ -212,11 +224,17 @@
 }
 
 .comic__item6 .text6 {
+    color: #cacaca;
     width: 150px;
     position: absolute;
     bottom: 210px;
     right:90px;
     font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.comic__item6 .text6:hover{
+    color: #000000;
 }
 
 
@@ -225,13 +243,13 @@
     width: 200px;
     right: 25px;
     bottom: 10px;
-
 }
 
 .comic__item7 .cloud-img7 {
     position: absolute;
     bottom: 120px;
     right:5px;
+    
 }
 
 .comic__item7 .cloud-img7{
@@ -239,13 +257,18 @@
 }
 
 .comic__item7 .text7 {
+    color: #cacaca;
     width: 150px;
     position: absolute;
     bottom: 210px;
     right:20px;
     font-size: 15px;
+    transition: all 0.5s ease-in-out;
 }
 
+.comic__item7 .text7:hover {
+    color: #000000;
+}
 
 
 
@@ -266,32 +289,183 @@
     }
 }
 
+@media(max-width:1100px) {
+    .cloud3{
+        transform: scaleY(0.9) scaleX(0.9);
+        left: 250px;
+        bottom: 2500px;
+    }
+    .cloud5{
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        left: 220px;
+        top: 10px;
+    }
+}
 @media(max-width:900px) {
     .comic__item {
         width: 100%;
     }
+
+    .cloud2{
+        transform: scaleY(1.1) scaleX(1.1) rotate(0deg);
+        top: 1px;
+        left: 430px;
+    }
+
+    .cloud3{
+        transform: scaleY(0.9) scaleX(0.9);
+        left: 350px;
+        bottom: 20000px;
+    }
+    
+    .cloud4{
+        transform: scaleY(1) scaleX(1) rotate(0deg);
+        left: 400px;
+    }
+
+    .cloud5{
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        left: 320px;
+        top: 10px;
+    }
+    
+    .cloud7{
+        left: 420px;
+        }
+}
+
+
+@media(max-width:830px) {
+    .cloud2 {
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        top: 1px;
+        left: 250px;
+    }
+    
+    .cloud3{
+        transform: scaleY(0.9) scaleX(0.9);
+        left: 300px;
+        bottom: 20000px;
+    }
+    .cloud4{
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        left: 300px;
+        top: 10px;
+    }
+    .cloud7{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 350px;
+        top: 10px;
+        }
+}
+
+@media(max-width:700px) {
+    .cloud5{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 250px;
+        top: 10px;
+    }
+
+    .cloud6{
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        left: 200px;
+        top: 1px;
+    }
+    
+    .cloud7{
+        transform: scaleY(0.9) scaleX(0.9) rotate(0deg);
+        left: 275px;
+    }
 }
 
 @media(max-width:600px) {
-    .comic__item5 .cloud1 {
-        width: 200px;
-        top: 100px;
-        left: 0;
-
+    .cloud1 {
+        transform: scaleY(1) scaleX(0.9) rotate(20deg);
+        bottom: 20px;
+        right: 70px;
     }
 
-    .comic__item5 .cloud-img1 {
-        transform: scaleX(-1) scaleY(-1);
+ 
+    .cloud2{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        top: 1px;
+        left: 200px;
     }
 
-    .comic__item5 .cloud2 {
-        position: absolute;
-        width: 200px;
-        right: 50px;
-        bottom: 50px;
+    .cloud3{
+        transform: scaleY(0.8) scaleX(0.8);
+        left: 250px;
     }
 
-    .comic__item5 .cloud-img2 {
-        transform: rotate(180deg);
+    .cloud4{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 170px;
+        top: 10px;
     }
+
+    .cloud5{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 230px;
+        top: 10px;
+    }
+
+    .cloud6{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 180px;
+        top: 1px;
+    }
+
+    .cloud7{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 220px;
+        }
+}
+
+@media(max-width:550px){
+    .cloud7{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 180px;
+        }
+}
+
+
+@media(max-width:500px) {
+    .cloud1 {
+        transform: scaleY(0.8) scaleX(0.7) rotate(20deg);
+        top: 200px;
+        right: 80px;
+    }
+
+    .cloud2 {
+        transform: scaleY(0.7) scaleX(0.7) rotate(0deg);
+        top: 2px;
+        left: 150px;
+    }
+    .cloud3{
+        transform: scaleY(0.8) scaleX(0.8);
+        left: 190px;
+        bottom: 20000px;
+    }  
+    
+    .cloud4{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 170px;
+        top: 10px;
+    }
+
+    .cloud5{
+        transform: scaleY(0.7) scaleX(0.7) rotate(0deg);
+        left: 150px;
+        top: 10px;
+    }
+    .cloud6{
+        transform: scaleY(0.8) scaleX(0.8) rotate(0deg);
+        left: 150px;
+        top: 1px;
+    }
+    .cloud7{
+        transform: scaleY(0.7) scaleX(0.7) rotate(0deg);
+        left: 160px;
+        }
+
 }
